@@ -1,5 +1,7 @@
 # Facial Emotion Recognition using MobileNet
 
+## Deployed using GitHub Pages - https://swapnika29.github.io/Facial-Expression-Recognition/
+
 ## Overview
 This project implements a facial emotion recognition system using a pre-trained MobileNet model. The application detects facial expressions in real-time via webcam and classifies them into one of eight categories: Angry, Contempt, Disgust, Fear, Happy, Sad, Surprise, or Neutral.
 
