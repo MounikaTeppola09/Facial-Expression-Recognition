@@ -1,6 +1,6 @@
 # Facial Emotion Recognition using MobileNet
 
-## Deployed using GitHub Pages - https://swapnika29.github.io/Facial-Expression-Recognition/
+## Deployed using GitHub Pages - https://mounikateppola09.github.io/Facial-Expression-Recognition/
 
 ## Overview
 
