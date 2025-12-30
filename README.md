@@ -3,7 +3,43 @@
 ## Deployed using GitHub Pages - https://swapnika29.github.io/Facial-Expression-Recognition/
 
 ## Overview
-This project implements a facial emotion recognition system using a pre-trained MobileNet model. The application detects facial expressions in real-time via webcam and classifies them into one of eight categories: Angry, Contempt, Disgust, Fear, Happy, Sad, Surprise, or Neutral.
+
+This project implements a **real-time facial emotion recognition system** that analyzes live webcam video to identify human facial expressions. Using **OpenCV**, the system detects faces in each video frame, preprocesses the detected regions and passes them to a **pre-trained MobileNet-based deep learning model** for emotion classification.
+
+The model predicts one of eight emotion categories `Angry, Contempt, Disgust, Fear, Happy, Sad, Surprise and Neutral`and displays the predicted emotion directly on the video stream. By leveraging the lightweight **MobileNet architecture**, the application achieves efficient inference suitable for real-time use. The project demonstrates an end-to-end computer vision pipeline, combining face detection, image preprocessing, deep learning–based inference and real-time visualization.
+
+---
+
+## Model Details
+
+- **Architecture**: MobileNet (Transfer Learning)
+- **Framework**: TensorFlow / Keras
+- **Saved Model**: `20_epochs_mobilenet_reloaded.keras`
+- **Training Epochs**: 20
+- **Input**: Face images extracted from video frames
+- **Output**: Emotion class probabilities
+
+---
+
+## My Contributions (Group Project)
+
+- Integrated and verified the pre-trained MobileNet model within the existing real-time inference pipeline
+- Reviewed image preprocessing steps (resize, normalization, input shape) with the training configuration
+- Checked and corrected emotion label mappings to ensure predictions were displayed accurately
+- Stabilized the OpenCV–TensorFlow real-time inference loop
+- Assisted in validating webcam capture, face detection, prediction display, and clean exit handling
+
+---
+
+## Features
+
+- Real-time facial emotion detection via webcam
+- Lightweight MobileNet architecture for fast inference
+- Haar Cascade–based face detection
+- Live emotion label display on detected faces
+- Deployed frontend using GitHub Pages
+
+---
 
 ## Setup Instructions
 
@@ -22,6 +58,7 @@ This project implements a facial emotion recognition system using a pre-trained 
     ```bash
     python main.py
     ```
+---
 
 ## Files
 
@@ -31,18 +68,20 @@ This script runs the real-time facial emotion recognition application. It uses O
 ### `mobilenet.ipynb`
 This Jupyter Notebook contains the training and evaluation code for the MobileNet-based emotion recognition model. It details data preprocessing, model training, and saving the trained model as `20_epochs_mobilenet_reloaded.keras`.
 
-## Model
-- The pre-trained MobileNet model is saved as `20_epochs_mobilenet_reloaded.keras`.
-- Ensure the model file is placed in the same directory as `main.py` or update the file path in the script accordingly.
+---
 
 ## Usage Notes
 - Press `ctrl + q` to quit the application during runtime.
 - Ensure your webcam is connected and accessible.
 
+---
+
 ## Requirements
 - Python 3.10
 - TensorFlow
 - OpenCV
+
+---
 
 ## Troubleshooting
 - **No webcam feed:**
@@ -53,3 +92,6 @@ This Jupyter Notebook contains the training and evaluation code for the MobileNe
 
 - **Errors related to OpenCV or TensorFlow:**
   - Reinstall the dependencies using the command: `pip install tensorflow opencv-python`.
+ 
+
+
